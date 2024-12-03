@@ -5,10 +5,7 @@ using UnityEngine;
 public class FrieSpell : Spell
 {
 
-    public override void Cast()
-    {
-        base.Cast();
-    }
+    
 
 
 
