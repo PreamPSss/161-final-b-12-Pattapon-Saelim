@@ -5,9 +5,11 @@ using UnityEngine;
 public abstract class Animal : MonoBehaviour
 {
     protected string animalName;
-    void Init(string AnimalName)
+    void Init()
     {
-        AnimalName = animalName;
+        this.animalName = animalName;
+        Debug.Log($"This is a {animalName}");
+
     }
 
     
@@ -16,10 +18,11 @@ public abstract class Animal : MonoBehaviour
 
     void Start()
     {
-        Init(animalName);
-        
+        Init();
         Debug.Log ($"This is a {animalName}");
     }
-
-   
+    void Makesound()
+    {
+        string animalSound = "";
+    }
 }
